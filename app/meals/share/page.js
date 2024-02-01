@@ -1,12 +1,9 @@
-import { useFormStatus } from 'react-dom';
-
 import ImagePicker from '@/components/meals/image-picker';
 import classes from './page.module.css';
 import MealsFormSubmit from '../meals-form-submit';
+import { shareMeal } from '@/lib/actions';
 
 export default function ShareMealPage() {
-  const status = useFormStatus();
-
   return (
     <>
       <header className={classes.header}>
